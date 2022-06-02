@@ -1,0 +1,101 @@
+*{ 
+   font-family:Georgia, 'Times New Roman', Times, serif;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
+.body{ 
+    background-image: url("/moon-415501.jpg ");
+    background: rgb(38, 1, 1);
+}
+
+ul{
+    position: absolute;
+    top:50%;
+    left:50%;
+    transform:translate(-50%,-50%);
+    display: flex;   
+}
+
+ul li{
+    list-style: none;
+    margin: 0 25px;
+    display: flex;
+}
+
+ul li a i{
+    font-size:35px;
+    color:rgb(0, 0, 0);
+    transition:0.5s;
+    padding-right:17px;
+}
+
+ul li a span{
+    color:#333;
+    letter-spacing: 2px;
+    transition:0.5s;
+}
+
+ul li a{
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    width: 12rem;
+    height: 80px;
+    color: #333;
+    font-weight: bold;
+    font-size: larger;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background:#fff;
+    padding-left:20px;
+    position:relative;
+    transition:0.5s;
+}
+
+ul li a::before{
+    content:" ";
+    position:absolute;
+    top: 10px;
+    left: -20px;
+    height: 100px;
+    width: 20px;
+    background: #cecece;
+    transition: 0.5s;
+    transform: skewY(-45deg);
+}
+
+ul li a::after{
+    content:" ";
+    position:absolute;
+    bottom: -20px;
+    left: -10px;
+    height: 20px;
+    width: 100%;
+    background: #cecece;
+    transition: 0.5s;
+    transform: skewX(-45deg);
+}
+
+
+ul li:hover i{
+    color: #fff;
+}
+
+ul li:hover span{
+    color: #fff;
+}
+
+ul li:hover a{
+    background: #0877ab;
+    transform: translate(15px, -15px);
+    box-shadow:-50px 50px 50px rgba(0, 0,0,0.5);
+}
+
+ul li:hover a::before{
+    background: #0391d3;
+}
+
+ul li:hover a::after{
+    background: #1c91c7;
+}
